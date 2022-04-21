@@ -9,4 +9,14 @@ module ApplicationHelper
             page_title + " | " + base_title
         end
     end
+
+    def space_name(fullname="")
+        fullname_space = ""
+        fullname.split("").reject(&:blank?).each_with_index do |str, i|
+            next fullname_space += str if(i == 0)
+            fullname_space += " " if(str == str.upcase)
+            fullname_space += str
+        end
+        return fullname_space
+    end
 end
