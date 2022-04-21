@@ -1,0 +1,12 @@
+{
+    "emeraldwalk.runonsave": {
+        "commands": [
+            {
+                "match": ".*\\.rb$",
+                "isAsync": true,
+                "cmd": "docker compose run web rufo ${relativeFile}",
+            }
+        ],
+        "autoClearConsole": false
+    }
+}
