@@ -64,6 +64,7 @@ group :development, :test do
   # Guard
   gem "guard"
   gem "guard-shell"
+  gem 'guard-rspec'
 
   # RSpec
   gem "factory_bot_rails"
